@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            background-color: #3b3b4f;
+        }
+        .logo{
+            padding-left: 4px;
+            text-align: center;
+        }
+        hr{
+            border: none;
+        }
+        html{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+        .main{
+            position: absolute;
+            width: 350px;
+            height: 550px;
+            background: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient();
+        }
+        .card{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 450px;
+            height: 350px;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+            border-radius: 25px;
+            border: 2px solid goldenrod;
+        }
+        .card:active{
+        transform: rotateY(180deg);
+        }
+        .front{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 450px;
+            height: 350px;
+            border: 2px solid goldenrod;
+            border-radius: 25px;
+            backface-visibility: hidden;
+            overflow: hidden;
+            background-color: #f5f6f7;
+            box-shadow: 0 0 20px 0 #0a0a23;
+        }
+        .back{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 450px;
+            height: 350px;
+            border: 2px solid goldenrod;
+            border-radius: 25px;
+            backface-visibility: hidden;
+            overflow: hidden;
+            transform: rotateY(180deg);
+            background-color: #f5f6f7;
+            box-shadow: 0 0 20px 0 #0a0a23;
+        }
+        .imgLogo{
+            height: 150px;
+            width: 150px;
+        }
+        .text{
+            text-align: center;
+        }
+        .frontend{
+           text-align: center; 
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            border: 1px solid blanchedalmond;
+            border-radius: 50%;
+        }
+        .backtop{
+            padding-top: 7px;
+            text-align: center;
+        }
+        .details{
+            text-align: center;
+            
+        }
+        h3{
+            color: red;
+        }
+        .backend{
+            text-align: center;
+            margin-bottom: 100%;
+        }
+        .social{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehman Jewellers</title>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="front">
+               <div class="logo"><img class="imgLogo" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/423221108_1121253079222663_9029932924085971039_n.png?stp=dst-png_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=510075&_nc_ohc=pioqh9nyQz4AX_tTEyJ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRBVfhKypsYf0fz79O663kkWJrUzNzP9-GTgbbvmtb9Yg&oe=65E954ED" alt="logo"></div>
+               <div class="text">We offer Kundan, Silver, One Carat, Indian, and Artificial jewelry. We create customized products based on orders. Please visit our social media profiles for more information.</div>
+               <hr>
+               <div class="social">
+                    <div class="link"><a target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Frehman.jeweller%2F%3Ffbclid%3DIwAR2XJHi3cF5RPwi104F9EG-Vn1IJDOilafxC3_AaVwm2KJiczC4PpL20W5k&h=AT12Xp6IYK5jV8r-SlL8hBv1sdMvtEiV25FpeYSnFGBgmAszhYjOSmyn0kKQxJtymCHaNifuriNuChkd9ZAJQwSaHbILQIg8DZXRgOpjPSeZzZ74Wts0a52Acm5I9vxzZN_K4g" class="link">
+                    <img class="icon" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/422937404_1582141025938594_1680225682279540806_n.png?_nc_cat=102&ccb=1-7&_nc_sid=510075&_nc_ohc=ghRSZlvjuMwAX8MS-vA&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTUm5X6rKjyESaJ6KbFOquW7P93V4ZLQbJ-hN9FrMeLFg&oe=65E986BA"></a></div>
+                    <div class="link"><a target="_blank" href="https://www.facebook.com/rehmanjeweller70"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEU7WZj///8lS5Hh5O0hSJDz9PgxU5XV2eYsT5P7/P22vtQpTZI4V5ckSpHJz9/k5+8bRY9EYJyNm71yhLB6i7Skr8pccqartM2Wo8JRaqHY3OcAOIk/XJpjeKmcqMWIl7tLZZ9sf63DytxgdaeCkbiyu9G2d+NmAAAEcklEQVR4nO3dbXOTQBiFYdjAQsvyEgJpWjW1tf7/vyixZhqdaTgBHpYHz/3JGafIZRMC2V0Iwo/icrOOyvhCFZz/UDRZlJt1lEdpU/wjTLbGumA9OWu2yaWwrtbEe89V9Ydwl/neHZGy3VlYrxPYEet3YVL53hOxquS3cLu+9+A5tz0JC+N7PwQzRSdsrO/dEMw2nTBb74u0e5mmYRBHvvdCtCgOytz3ToiWl8FmzQea7lCzoVB7FOqPQv1RqD8K9Ueh/ijUH4X6o1B/FPrOWZv+yab2lHMuuOXrz8UKnbNZFH391tTH9uFU2x4P9fPb7uXH96D7m9yYrCP3W5cpdDY3L8eiDD8tLjfF68Ph7bGXuEShjR7bp89xf3Wf9m1tcUJngvbK70690EX7op+lV+jyPfrq1Cm07rbfnzrhn5kTqxXaNBkAVCRM93dDgHqEWTPIp0dohrwFNQnN81CgEmE69CWqRWj3w4FKhMOOonqE1a0natqE6WEMUIHQfR0FVCCMBp2rKRK6l3HA5QurGy7nVQrtbiRw8cJo1CeFAqF7HAtcujC9X7swGnO+pkE4/jizdGH2unZhFPcLVAsnOJIuXGjHXVUoEKY3vA3L+8PuMUizc+eVlFn/YhiPwhw9J71rt1F2GgwdtPLFo9CAwDZKxyzq8Sd04BdQP0bunj+hfYOA+7HLzjwKjwiw7j1W9uVPCJ12l+NXt/oTZshw6Nv4pZH+hAa5+p1g4aA/IfJxOMX63WUL2wnW73oUAlcWU6xQ9idErp3653T1t2zhFIvMly2cYoUyhXJRSCEahXJRSCEahXJRSCEahXJRSCEahXJRSCEaheNyV0KE0bUNnPItdPZKFSCsrm3glG9h1m8YGTD6JipE5yIMb+95tbq80Pd6fHHhHTAIrluI3HpVt7AA7kOuW/gTmIuiW3gAPhB1C5FRcN1CZBRctxA5M1cthO5ErloI7blq4SvyWA7VwgdkaqZqYe39+lBa+OL9Gl9aCD1bRbUQmkCsWRhDX8VpFj5BO65ZCH0cqha20EoFzcJnaPqpZuE3aAaxZiE2RVqzEFuMoVgIPsVJsTDB9luxsH8JsHbhEVuroFgIrmtTPH4IjKyJC+1TciXgth/XfvwJGuOWHsc32ed9AUa5v1z5efSpjZyLIReFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKJRKBeFFKL9F0LwTjZTN5cwLwPoTq7TN5cwioMwneCpu0P+5VmELg2DSZ6cfHszCW3TCad4vvftzSQ0RSfE7gM6dfMI3TY8CRPoRqATN4+wSn4Lwxq6i+S0zSLM6vBdGO7mJ84hzHbhWRjW1dzvRXmhq+rwQxgmWwM8tGXChIXOmm0SXgrDsGiyKDezBd0Ja+jG8yhtivNWgostxuVmvu76G7zt8vK/7xd8NF9nar5dDQAAAABJRU5ErkJggg=="class="icon"></img></a></div>
+                    <div class="link"><a target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tiktok.com%2F%40rehman.jeweller%3Ffbclid%3DIwAR0VqvNp-JnNBGNuVK0hemrkDQzoaOnNstdLey_mhlK9cQRAtqEF2e825sM&h=AT12Xp6IYK5jV8r-SlL8hBv1sdMvtEiV25FpeYSnFGBgmAszhYjOSmyn0kKQxJtymCHaNifuriNuChkd9ZAJQwSaHbILQIg8DZXRgOpjPSeZzZ74Wts0a52Acm5I9vxzZN_K4g"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/410751308_349886607793400_7458668568591858941_n.png?_nc_cat=100&ccb=1-7&_nc_sid=510075&_nc_ohc=PWOzMKfMc9kAX8jVyCK&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQ03pylN9WiFC8GEBKuaCKWINRKmK_MYJSVdIJJXwbtvg&oe=65E96FA6" class="icon"></img></a></div>
+                </div>
+                <hr>
+                <div class="frontend">The pertinent details are located on the back side of the card.</div>     
+            </div>
+
+            <div class="back">
+                <div class="backtop">You can also contact us by Whats App and Gmail</div>
+                <hr>
+                <div class="details">
+                 <h3>03042887297</h3>
+                 <h4>Gmail:</h4><h3>info.rehmanjeweller@gmail.com</h3>
+                </div>
+                <hr>
+                <hr>
+                <hr>
+                <div class="backend">For any quries feel free to contatct us</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
